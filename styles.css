@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 242, 242);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+article {
+  display: flex;
+  margin: auto;
+  width: 600px;
+  height: 500px;
+  position: relative;
+  top: 20rem;
+}
+
+.result {
+  background-color: rgb(108, 91, 235);
+  color: rgb(202, 199, 199);
+  text-align: center;
+  padding: 4rem 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-radius: 25px;
+}
+
+#score {
+  background-color: rgb(69, 47, 239);
+  border-radius: 100%;
+}
+
+#my-score,
+.result h3 {
+  color: white;
+}
+
+.result h3 {
+  font-size: 2.5rem;
+}
+
+#my-score {
+  font-size: 4rem;
+  display: block;
+}
+
+.summary {
+  background-color: rgb(238, 237, 248);
+  width: 50%;
+  padding: 4rem 2rem;
+}
+.summary h2 {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-left: 1rem;
+  list-style: none;
+}
+
+.reaction-category,
+.memory-category,
+.verbal-category,
+.visual-category {
+  display: flex;
+  justify-content: space-around;
+}
+
+#reaction {
+  color: rgb(244, 116, 116);
+}
+
+.reaction-category {
+  background-color: rgb(243, 229, 229);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+#memory {
+  color: rgb(237, 203, 108);
+}
+
+.memory-category {
+  background-color: rgb(242, 240, 234);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#verbal {
+  color: rgb(89, 144, 89);
+}
+
+.verbal-category {
+  background-color: rgb(235, 245, 235);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#visual {
+  color: rgb(70, 97, 186);
+}
+
+.visual-category {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: rgb(223, 228, 245);
+}
+
+button {
+  display: flex;
+  margin: 2.5rem auto;
+  background-color: rgb(53, 66, 74);
+  color: white;
+  padding: 1rem 5rem;
+  border-radius: 25px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  margin: auto;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 720px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .attribution {
+    bottom: 5rem;
+    margin: auto;
+    position: absolute;
+  }
+}
